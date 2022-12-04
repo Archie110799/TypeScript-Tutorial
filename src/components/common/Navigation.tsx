@@ -1,8 +1,11 @@
 import React from "react";
 
-type Props = {};
+interface IProps {
+  setIsLogin: (value: boolean) => void;
+}
 
-function Navigation({}: Props) {
+function Navigation(props: IProps) {
+  const { setIsLogin } = props;
   return (
     <div className="card text-center">
       <div className="card-header">
@@ -18,7 +21,9 @@ function Navigation({}: Props) {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled">Disabled</a>
+            <button className="nav-link" onClick={() => setIsLogin(false)}>
+              LOGOUT
+            </button>
           </li>
         </ul>
       </div>
@@ -26,9 +31,7 @@ function Navigation({}: Props) {
         <h5 className="card-title">
           LẬP TRÌNH WEB VỚI REACT, NODEJS, MONGODB, EXPRESSJS
         </h5>
-        <p className="card-text">
-          ReactJS Batch 24
-        </p>
+        <p className="card-text">ReactJS Batch 24</p>
       </div>
     </div>
   );
