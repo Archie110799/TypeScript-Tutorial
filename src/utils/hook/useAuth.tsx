@@ -1,5 +1,5 @@
 import React, {createContext, useContext, useState} from 'react';
-import {USER_TYPE_ENUM} from '../constain';
+import {USER_TYPE_ENUM} from '../constants/constain';
 
 interface IAuthenticator {
   email: string;
@@ -25,7 +25,7 @@ const authContext = createContext<IAuthContext>({
 
 // Provider component that wraps your app and makes auth object ...
 // ... available to any child component that calls useAuth().
-export function ProvideAuth({children}) {
+export function ProvideAuth({children} : any) {
   const auth = useProvideAuth();
   return <authContext.Provider value={auth}>{children}</authContext.Provider>;
 }

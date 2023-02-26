@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { State } from "../../Redux/rootReducer";
+import { State } from "../../redux/rootReducer";
+import {t} from 'i18next';
 
 const LoadingSpinner = () => {
   const { loading } = useSelector((state: State) => state.common);
@@ -14,6 +15,9 @@ const LoadingSpinner = () => {
     }
   }, [loading]);
 
-  return <>{isLoading && <div className="loading">Loading&#8230;</div>}</>;
+  return <>{isLoading && <div className="loading">{t('string.loadding')} Loadding &#8230;</div>}
+    <h1>{t('string.title')}</h1>
+    <p>{t('string.content')}</p>
+  </>;
 };
 export default LoadingSpinner;

@@ -1,5 +1,5 @@
 import "./App.css";
-import Redux from "./Redux";
+import Redux from "./redux";
 
 function App() {
   return (

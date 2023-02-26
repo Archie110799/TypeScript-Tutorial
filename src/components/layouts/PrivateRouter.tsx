@@ -20,7 +20,8 @@ function PrivateRouter({}: Props) {
     <>
       <Routes>
         <Route element={<BaseLayout />}>
-          {privateRoutes.map((route, index) => (
+          
+          {/* {privateRoutes.map((route, index) => (
             <Route
               path={route.path}
               element={
@@ -30,7 +31,7 @@ function PrivateRouter({}: Props) {
               }
               key={index}
             ></Route>
-          ))}
+          ))} */}
         </Route>
       </Routes>
     </>

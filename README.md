@@ -44,6 +44,8 @@
 
      > https://pixabay.com/
 
+  - Đa Ngôn ngữ: https://react.i18next.com/
+  npm install react-i18next i18next --save
 # ⭐ B. REACT BASIC
 
 ## 1. Javascript ESNext

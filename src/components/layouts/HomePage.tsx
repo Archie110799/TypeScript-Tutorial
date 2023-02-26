@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { IUser } from "../../Redux/interfaces/common";
-import { State } from "../../Redux/rootReducer";
-import { deleteUserAsync, getUsersAsync } from "../../Redux/User/actions";
+import { IUser } from "../../redux/interfaces/common";
+import { State } from "../../redux/rootReducer";
+import { deleteUserAsync, getUsersAsync } from "../../redux/User/actions";
 
 type Props = {};
 
